@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ssocket</title>
+    <script type="text/javascript" src="sclient.js"></script>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <img src="/2018918151051.png" alt="上海鲜花港 - 郁金香" />
+            </td>
+            <td></td>
+        </tr>
+
+
+    </table>
+    <script type="text/javascript">
+        var socket = io.connect('http://localhost:8080');
+        socket.on('news', function(data) {
+            console.log(data);
+            socket.emit('my other event', {
+                my: 'data'
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+    "name": "gbauto",
+    "version": "1.0.0",
+    "description": "gbauto",
+    "main": "index.js",
+    "scripts": {
+        "startdev": "node ./server.js",
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.9",
+        "http-errors": "~1.6.2",
+        "mime": "^2.3.1",
+        "puppeteer": "^1.8.0",
+        "socket.io": "^2.1.1"
+    },
+    "author": "",
+    "license": "ISC"
+}
